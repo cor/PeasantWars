@@ -1,11 +1,4 @@
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.RenderingHints;
-import java.awt.geom.AffineTransform;
-import java.awt.geom.Ellipse2D;
+import java.awt.*;
 
 import javax.swing.JPanel;
 
@@ -15,22 +8,27 @@ import javax.swing.JPanel;
  */
 public class Game extends JPanel {
 
+    private Scene scene;
 
     public Game() {
 
         // set the size of the JPanel
         setPreferredSize(new Dimension(600, 600));
+
+        scene = new Scene(new Dimension(600, 600));
     }
 
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        drawStuff(g);
+        scene.draw(g);
     }
 
     private void drawStuff(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
+
+        g2d.fillRect(50, 50, 100, 100);
 
 
         // experiment with drawing stuff

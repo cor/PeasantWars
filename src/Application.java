@@ -46,6 +46,8 @@ public class Application extends JFrame {
             public void run() {
                 Application ex = new Application();
                 ex.setVisible(true);
+                ex.requestFocus();
+                ex.setLocationRelativeTo(null);
             }
 
         });
