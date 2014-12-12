@@ -1,5 +1,5 @@
 /**
- * Created by cor on 12-12-14.
+ * The main Game class
  */
 public class Game {
     public static void main(String[] args) {
