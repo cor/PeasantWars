@@ -1,4 +1,6 @@
 import java.awt.EventQueue;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import javax.swing.*;
 
 
@@ -34,6 +36,9 @@ public class Application extends JFrame {
         // disable window resizing
         setResizable(false);
 
+        KeyListener listener = new MyKeyListener();
+        addKeyListener(listener);
+
         // set the JFrame to the correct size (specified by the Game JPanel)
         pack();
     }
@@ -51,5 +56,21 @@ public class Application extends JFrame {
             }
 
         });
+    }
+
+    public class MyKeyListener implements KeyListener {
+        @Override
+        public void keyTyped(KeyEvent e) {
+        }
+
+        @Override
+        public void keyPressed(KeyEvent e) {
+            System.out.println("keyPressed="+KeyEvent.getKeyText(e.getKeyCode()));
+        }
+
+        @Override
+        public void keyReleased(KeyEvent e) {
+            System.out.println("keyReleased="+KeyEvent.getKeyText(e.getKeyCode()));
+        }
     }
 }

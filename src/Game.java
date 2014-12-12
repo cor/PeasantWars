@@ -1,5 +1,5 @@
 import java.awt.*;
-
+import java.awt.event.*;
 import javax.swing.JPanel;
 
 
@@ -36,8 +36,6 @@ public class Game extends JPanel {
 
             g2d.drawLine(0, i * 60, 600, i * 60);
         }
-
     }
-
 }
 
