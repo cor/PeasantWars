@@ -1,13 +1,14 @@
-import javax.swing.*;
+import javax.swing.JPanel;
+
 
 /**
- * The main Game class
+ * The Game class is the JPanel where the game takes place.
  */
-public class Game {
-    public static void main(String[] args) {
-        JFrame window = new JFrame("Test");
-        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
-        window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        window.setVisible(true);
+public class Game extends JPanel {
+
+    // main initializer, still empty
+    public Game() {
+
     }
 }
+
