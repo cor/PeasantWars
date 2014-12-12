@@ -5,8 +5,8 @@ import javax.swing.*;
  */
 public class Game {
     public static void main(String[] args) {
-        JFrame window = new JFrame("Test");
-        window.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        JFrame window = new JFrame("PeasantWars");
+        window.setSize(600,600);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setVisible(true);
     }
