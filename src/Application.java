@@ -23,7 +23,6 @@ public class Application extends JFrame {
 
         // Add a new instance of the Game to the Application's JFrame and configure it
         add(new Game());
-        setSize(600, 600);
         setTitle("PCMasterRace");
 
         // Quit the program when the window is closed
@@ -32,11 +31,17 @@ public class Application extends JFrame {
         // center the window on the screen
         setLocationRelativeTo(null);
 
+        // disable window resizing
+        setResizable(false);
+
+        // set the JFrame to the correct size (specified by the Game JPanel)
+        pack();
     }
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
 
+        // create an instance of the application and make it visible
+        EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
                 Application ex = new Application();
