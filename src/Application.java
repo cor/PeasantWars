@@ -65,12 +65,12 @@ public class Application extends JFrame {
 
         @Override
         public void keyPressed(KeyEvent e) {
-            System.out.println("keyPressed="+KeyEvent.getKeyText(e.getKeyCode()));
+            System.out.println("keyPressed=" + KeyEvent.getKeyText(e.getKeyCode()));
         }
 
         @Override
         public void keyReleased(KeyEvent e) {
-            System.out.println("keyReleased="+KeyEvent.getKeyText(e.getKeyCode()));
+            System.out.println("keyReleased=" + KeyEvent.getKeyText(e.getKeyCode()));
         }
     }
 }
