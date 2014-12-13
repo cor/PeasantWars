@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.awt.*;
 
 /**
@@ -46,11 +47,8 @@ public class Player {
      * @param g2d the Graphics2D object to draw the player to
      */
     public void draw(Graphics2D g2d) {
-
-        g2d.setColor(new Color(75, 207, 60));
-        g2d.fillOval(position.x, position.y, size.width, size.height);
-        g2d.setColor(Color.black);
-        g2d.drawOval(position.x, position.y, size.width, size.height);
+        Image Peasant = new ImageIcon("images/Peasant.png").getImage();
+        g2d.drawImage(Peasant, position.x, position.y, 100, 100, null);
     }
 
     /**
