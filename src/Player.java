@@ -8,12 +8,15 @@ public class Player {
     public Dimension size;
     public Point position;
 
+    public int moveSpeed;
+
     /**
      * The default initializer
      */
     public Player() {
         position = new Point(200, 200);
         size = new Dimension(60, 60);
+        moveSpeed = 5;
     }
 
     /**
@@ -58,19 +61,19 @@ public class Player {
 
         // move the player
         if (inputManager.up) {
-            this.move(Direction.NORTH, 1);
+            this.move(Direction.NORTH, moveSpeed);
         }
 
         if (inputManager.down) {
-            this.move(Direction.SOUTH, 1);
+            this.move(Direction.SOUTH, moveSpeed);
         }
 
         if (inputManager.left) {
-            this.move(Direction.WEST, 1);
+            this.move(Direction.WEST, moveSpeed);
         }
 
         if (inputManager.right) {
-            this.move(Direction.EAST, 1);
+            this.move(Direction.EAST, moveSpeed);
         }
     }
 
