@@ -26,7 +26,7 @@ public class Scene {
         map[2][4] = 1;
     }
 
-    public void draw(Graphics g) {
+    public void draw(Graphics2D g2d) {
 
         // iterate over vertical rows
         for (int x = 0; x < 10; x++) {
@@ -36,13 +36,13 @@ public class Scene {
 
                 // check the integer at the position and set the color accordingly
                 if (map[x][y] == 0) {
-                    g.setColor(Color.blue);
+                    g2d.setColor(new Color(200, 200, 200));
                 } else if (map[x][y] == 1) {
-                    g.setColor(Color.red);
+                    g2d.setColor(new Color(237, 221, 43));
                 }
 
                 // draw the rectangle at the correct position
-                g.fillRect(x * tileSize.width, y * tileSize.height, tileSize.width, tileSize.height);
+                g2d.fillRect(x * tileSize.width, y * tileSize.height, tileSize.width, tileSize.height);
             }
         }
 

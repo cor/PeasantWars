@@ -36,9 +36,12 @@ public class Player {
     }
 
 
-    public void draw(Graphics g) {
-        g.setColor(Color.green);
-        g.fillOval(position.x, position.y, size.width, size.height);
+    public void draw(Graphics2D g2d) {
+
+        g2d.setColor(new Color(75, 207, 60));
+        g2d.fillOval(position.x, position.y, size.width, size.height);
+        g2d.setColor(Color.black);
+        g2d.drawOval(position.x, position.y, size.width, size.height);
     }
 
 }

@@ -9,20 +9,30 @@ import javax.swing.JPanel;
 public class Game extends JPanel {
 
     private Scene scene;
+    private Player player;
 
     public Game() {
 
         // set the size of the JPanel
         setPreferredSize(new Dimension(600, 600));
 
+        // configure game objects
         scene = new Scene(new Dimension(600, 600));
+        player = new Player();
     }
 
     @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        scene.draw(g);
+        //enable antialiassing
+        Graphics2D g2d = (Graphics2D) g;
+        RenderingHints rh = new RenderingHints(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+        rh.put(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
+        g2d.setRenderingHints(rh);
+
+        scene.draw(g2d);
+        player.draw(g2d);
     }
 
     private void drawStuff(Graphics g) {
