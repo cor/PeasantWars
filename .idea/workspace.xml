@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a338365d-e04d-4685-bde3-52f4aba1e1e2" name="Default" comment="" />
+    <list default="true" id="a338365d-e04d-4685-bde3-52f4aba1e1e2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/Application$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/Collisions.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/Direction.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/Game$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/Game$Tick.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/InputManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/Player$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/Player.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/PeasantWars/Scene.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PeasantWars.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="PeasantWars.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -565,7 +585,7 @@
       <workItem from="1418419959354" duration="2737000" />
       <workItem from="1418473771955" duration="591000" />
       <workItem from="1418495202004" duration="4593000" />
-      <workItem from="1421056346908" duration="134000" />
+      <workItem from="1421056346908" duration="164000" />
     </task>
     <task id="LOCAL-00001" summary="Changed Hello World to Hello Cor as a test">
       <created>1418397989598</created>
@@ -607,7 +627,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12711000" />
+    <option name="totallyTimeSpent" value="12741000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
