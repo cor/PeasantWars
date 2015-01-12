@@ -23,7 +23,7 @@ public class Game extends JPanel {
     public InputManager inputManager = new InputManager();
 
     // JPanel
-    private Dimension size = new Dimension(600,600);
+    private Dimension size = new Dimension(540,540);
 
 
 
