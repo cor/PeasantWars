@@ -17,7 +17,7 @@ public class Player {
     public Player() {
         position = new Point(200, 200);
         size = new Dimension(60, 60);
-        moveSpeed = 5;
+        moveSpeed = 10;
     }
 
     /**
@@ -47,8 +47,8 @@ public class Player {
      * @param g2d the Graphics2D object to draw the player to
      */
     public void draw(Graphics2D g2d) {
-        Image Peasant = new ImageIcon("images/Peasant.png").getImage();
-        g2d.drawImage(Peasant, position.x, position.y, 100, 100, null);
+//        Image Peasant = new ImageIcon("images/Peasant.png").getImage();
+//        g2d.drawImage(Peasant, position.x, position.y, 60, 60, null);
     }
 
     /**
